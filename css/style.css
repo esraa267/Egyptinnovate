@@ -101,7 +101,7 @@ ul{
       background: url("https://egyptinnovate.com/sites/all/themes/egyptinnovate/assets/img/body-bg.jpg");
       background-size: cover;
       min-width: 340px;
-      min-height :775px;
+      min-height :650px;
       position: relative;
       padding-top: 120px;
   }
@@ -110,8 +110,6 @@ ul{
        display: flex;
        align-items: center;
        justify-content: space-between;
-       
-       
  }
  .landing .image{
      width: 500px;
@@ -123,6 +121,7 @@ ul{
 .landing .container .text{
  padding: 20px;
  width: 400px;
+ line-height: 40px;
 }
 .btn{
      color: #fff;
@@ -133,15 +132,13 @@ ul{
     border-radius: 6px;
     margin: 5px;
  }
-  
-
   .separator{
       width: 100%;
-    
       background: url(../image/pattern.png);
       background-color: #b22432;
       position: relative;
-      top: -20px;
+   
+   
   }
   .separator .separator-text{
     color: #fff;
@@ -153,8 +150,8 @@ ul{
 }
 /* start artivles */
   .articles{
-      padding-top:200px ;
-      padding-bottom: 100px;
+      padding-top:120px ;
+   padding-bottom: 60px;
       position: relative;
   }    
   .articles .container{
@@ -196,10 +193,12 @@ ul{
   .map{
     background-image: url(../image/map.png);
     background-size: cover;
-    min-width: 340px;
-    min-height :700px;
-    position: relative;
+   width:100%;
+   position: relative;
+   top: -29;
+
   }
+ 
   .map .container{
       display: flex;
  
@@ -213,9 +212,6 @@ ul{
    margin: 25%;
    line-height: 25px;
 }
-
-
-
   .partner{
       background-color: white;
       margin-top: 0%;
