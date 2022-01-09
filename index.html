@@ -15,12 +15,15 @@
 <div class="header">
     <div class="container">
         <a href="#"class="logo" ><img src="https://egyptinnovate.com/sites/all/themes/egyptinnovate/logo.png"></a>
-        <ul class="main-nav">
-            <li><a href="#">Get Inspire</a> </li>
-            <li> <a href="#">Learn</a>  </li>
-            <li> <a href="#">Connect</a> </li>
-            <li><a href="#">Opportunities</a>  </li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
     </div>
 </div>
 <!--end header -->
@@ -215,7 +218,16 @@
 
 </div>
    
-      
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>  
 
 <!--end footer-->
 </body>
