@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,12 +15,15 @@
 <div class="header">
     <div class="container">
         <a href="#"class="logo" ><img src="https://egyptinnovate.com/sites/all/themes/egyptinnovate/logo.png"></a>
-        <ul class="main-nav">
-            <li><a href="#">Get Inspire</a> </li>
-            <li> <a href="#">Learn</a>  </li>
-            <li> <a href="#">Connect</a> </li>
-            <li><a href="#">Opportunities</a>  </li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+          </div>
+          <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
     </div>
 </div>
 <!--end header -->
@@ -146,7 +146,7 @@
 </div>
 <!--end map-->
 
-<div class="separator">
+<div class="separator sp">
     <h2 href="#" class="separator-text">OUR PARTNERS</h2>
 </div>
 
@@ -218,7 +218,16 @@
 
 </div>
    
-      
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>  
 
 <!--end footer-->
 </body>
